@@ -2,8 +2,8 @@ name: generate animation
 
 on:
   schedule:
-    # run every day at 23:00 UTC（bejing time 07:00）
-    - cron: '0 23 * * *'
+    # run Monday 00:00 (bejing time 08:00)
+    - cron: '0 0 * * 1'
   
   # allows to manually run the job at any time
   workflow_dispatch:
